@@ -5,8 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="NewFolder\File1.fs" />
-    <Compile Include="NewFolder\File.fs" />
     <Compile Include="Models\VideoModel.fs" />
     <Compile Include="Models/ErrorViewModel.fs" />
     <Compile Include="Controllers\VideosController.fs" />
