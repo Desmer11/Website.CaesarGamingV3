@@ -17,34 +17,30 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
         <!-- Font Awesome Library: For Icons in Sidebar -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="~/css/site.css" />
+        <link rel="stylesheet" href="~/css/videos.css" />
 
     </head>
     <body>
-        <div class="wrapper">
-            <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   MAIN CONTENT -->
-
-
-            <div class="container mt-5">
-                <h1 class="text-center mb-4">Videos</h1>
-                <div class="row">
-                    @foreach (var video in Model)
-                    {
-                    <div class="col-md-4 col-sm-6 col-12 mb-4">
-                        <div class="video-card shadow rounded p-3 bg-white">
-                            <video class="w-100 rounded" controls>
-                                <source src="@video.Url" type="video/mp4" />
-                                Your browser does not support the video tag.
-                            </video>
-                            <h3 class="video-title mt-3">@video.Title</h3>
-                            <p class="video-description text-muted">@video.Description</p>
-                        </div>
+        <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   MAIN CONTENT -->
+        <div class="container mt-5">
+            <h1 class="text-center mb-4">Videos</h1>
+            <div class="row">
+                @foreach (var video in Model)
+                {
+                <div class="col-md-4 col-sm-6 col-12 mb-4">
+                    <div class="video-card shadow rounded p-3 bg-white">
+                        <video class="w-100 rounded" controls>
+                            <source src="@video.Url" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                        <h3 class="video-title mt-3">@video.Title</h3>
+                        <p class="video-description text-muted">@video.Description</p>
                     </div>
-                    }
                 </div>
+                }
             </div>
-
         </div>
+
         <!-- SCRIPT -->
         <script src="~/js/site.js"></script>
 
