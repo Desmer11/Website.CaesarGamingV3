@@ -5,7 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Models\MusicModel.fs" />
+<<<<<<<<< Temporary merge branch 1
+    <Compile Include="NewFolder\File1.fs" />
+    <Compile Include="NewFolder\File.fs" />
+=========
+>>>>>>>>> Temporary merge branch 2
     <Compile Include="Models\VideoModel.fs" />
     <Compile Include="Models/ErrorViewModel.fs" />
     <Compile Include="Controllers\MusicController.fs" />
