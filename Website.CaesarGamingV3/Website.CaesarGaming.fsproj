@@ -5,9 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+	<Compile Include="Models\PlaylistModel.fs" />
 	<Compile Include="Models\MusicModel.fs" />
     <Compile Include="Models\VideoModel.fs" />
     <Compile Include="Models/ErrorViewModel.fs" />
+    <Compile Include="Controllers\PlaylistController.fs" />
     <Compile Include="Controllers\MusicController.fs" />
     <Compile Include="Controllers\VideosController.fs" />
     <Compile Include="Controllers\GamesController.fs" />
