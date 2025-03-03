@@ -31,7 +31,7 @@
 
                         <!-- Profile -->
                         <li class="sidebar-item">
-                            <a href="@Url.Action("Profile", "Account" )" class="sidebar-link">
+                            <a href="@Url.Action( "Profile", "Account" )" class="sidebar-link">
                                 <i class="fa-solid fa-list pe-2"></i>
                                 Profile
                             </a>
@@ -46,60 +46,36 @@
                             </a>
                             <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                                 <li class="sidebar-item">
-                                    <a href="@Url.Action("Login", "Account" )" class="sidebar-link">Login</a>
+                                    <a href="@Url.Action( "Login", "Account" )" class="sidebar-link">Login</a>
                                 </li>
                                 <li class="sidebar-item">
-                                    <a href="@Url.Action("Register", "Account" )" class="sidebar-link">Register</a>
+                                    <a href="@Url.Action( "Register", "Account" )" class="sidebar-link">Register</a>
                                 </li>
                             </ul>
                         </li>
 
                         <!-- Games -->
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#games"
-                               aria-expanded="false" aria-controls="games">
+                            <a href="@Url.Action( "Games", "Games" )" class="sidebar-link">
                                 <i class="fa-regular fa-file-lines pe-2"></i>
                                 Games
                             </a>
-                            <ul id="games" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                                <li class="sidebar-item">
-                                    <a href="@Url.Action("Games", "Games" )" class="sidebar-link">Games</a>
-                                </li>
-                                <li class="sidebar-item">
-                                    <a href="@Url.Action("Info", "Games" )" class="sidebar-link">Info</a>
-                                </li>
-                                <li class="sidebar-item">
-                                    <a href="@Url.Action("Tables", "Games" )" class="sidebar-link">Tables</a>
-                                </li>
-                            </ul>
                         </li>
 
                         <!-- Videos -->
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#videos"
-                               aria-expanded="false" aria-controls="videos">
+                            <a href="@Url.Action( "Videos", "Videos" )" class="sidebar-link">
                                 <i class="fa-regular fa-file-lines pe-2"></i>
                                 Videos
                             </a>
-                            <ul id="videos" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                                <li class="sidebar-item">
-                                    <a href="@Url.Action("Videos", "Videos" )" class="sidebar-link">Videos</a>
-                                </li>
-                            </ul>
                         </li>
 
                         <!-- Music -->
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#music"
-                               aria-expanded="false" aria-controls="music">
+                            <a href="@Url.Action( "Music", "Music" )" class="sidebar-link">
                                 <i class="fa-regular fa-file-lines pe-2"></i>
                                 Music
                             </a>
-                            <ul id="music" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                                <li class="sidebar-item">
-                                    <a href="@Url.Action("Music", "Music" )" class="sidebar-link">Music</a>
-                                </li>
-                            </ul>
                         </li>
 
                         <!-- Contact -->
@@ -111,7 +87,7 @@
                             </a>
                             <ul id="dashboard" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                                 <li class="sidebar-item">
-                                    <a href="@Url.Action("Contact", "Home" )" class="sidebar-link">Info</a>
+                                    <a href="@Url.Action( "Contact", "Home" )" class="sidebar-link">Info</a>
                                 </li>
                             </ul>
                         </li>
@@ -132,7 +108,7 @@
                     </nav>
                     <br>
                     <br>
-                    <h1>Welcome to CaesarGaming</h1>
+
                     <!--´>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MAIN CONTENT RENDERED -->
                     <div class="container">
                         <main role="main" class="mainContent pb-3">

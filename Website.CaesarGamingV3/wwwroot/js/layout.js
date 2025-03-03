@@ -3,6 +3,8 @@ toggler.addEventListener("click", function () {
     document.querySelector("#sidebar").classList.toggle("collapsed");
 });
 
+// Collapse/Uncollapse Sidebar Items
+
 
 
 //window.addEventListener("resize", adjustBackground);
