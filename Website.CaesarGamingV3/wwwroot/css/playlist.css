@@ -1,47 +1,57 @@
-﻿/* Ensure the wrapper is properly centered */
-/*.wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
+﻿/* Body Styling */
+body {
+    background-color: #121212; /* Spotify's dark theme */
+    color: #fff; /* White text for contrast */
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-}*/
+}
 
 /* Music Card Styling */
 .music-card {
-    background-color: #f9f9f9;
+    background-color: #181818; /* Slightly lighter than the background */
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Subtle shadow */
     text-align: center;
     transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden; /* Clip content that overflows */
 }
 
     .music-card:hover {
-        transform: scale(1.03);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transform: scale(1.02);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     }
 
-/* Audio Styling */
+/* Audio Player Styling */
 audio {
     width: 100%;
     border-radius: 8px;
     margin-bottom: 10px;
+    outline: none;
+    background-color: #282828; /* Matching Spotify style */
 }
 
 /* Music Title Styling */
 .music-title {
     font-size: 1.25rem;
-    font-weight: 500;
+    font-weight: bold;
     margin: 10px 0;
-    color: #333;
+    color: #1db954; /* Spotify's green accent */
     text-transform: capitalize;
 }
 
 /* Music Description Styling */
 .music-description {
     font-size: 0.9rem;
-    color: #666;
+    color: #b3b3b3; /* Light gray for secondary text */
 }
 
 /* Responsive Grid Layout */
@@ -52,21 +62,35 @@ audio {
 }
 
 .col-md-4, .col-sm-6, .col-12 {
-    flex: 1 1 calc(33.333% - 20px); /* Default for md */
+    flex: 1 1 calc(33.333% - 20px); /* Default for medium devices */
     max-width: calc(33.333% - 20px);
     box-sizing: border-box;
 }
 
-@media (max-width: 992px) { /* Small devices */
+@media (max-width: 992px) { /* Medium devices */
     .col-md-4, .col-sm-6 {
         flex: 1 1 calc(50% - 20px);
         max-width: calc(50% - 20px);
     }
 }
 
-@media (max-width: 768px) { /* Extra small devices */
+@media (max-width: 768px) { /* Small devices */
     .col-md-4, .col-sm-6, .col-12 {
         flex: 1 1 100%;
         max-width: 100%;
     }
 }
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1db954; /* Spotify green */
+    border-radius: 10px;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #1ed760; /* Slightly lighter green on hover */
+    }
